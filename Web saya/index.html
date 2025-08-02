@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        
+        <title>Ber</title>
+        <link rel="stylesheet" href="style.css" />
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    </head>
+    <body>
+        <!-- NAVIGATION BAR -->
+         <div class="container-navbar">
+            <ul class="ul-navbar">
+                <li class="li-navbar">
+                    <a href="Start.html" class="a-navbar">Pencet aja</a>
+                </li>
+                
+            
+            </ul>
+
+         </div>
+
+        <!-- NAVIGATION BAR DONE -->
+         
+
+        <!-- CONTENT 1 -->
+         <div class="container-content" />
+            <img src="download-removebg-preview.png"/>
+            
+           
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lirik Lagu Interaktif</title>
+  <style>
+    body {
+      background-color: #000;
+      color: white;
+      font-family: 'Courier New', monospace;
+      padding: 30px;
+      text-align: center;
+    }
+
+    #lyrics {
+      margin-top: 30px;
+      white-space: pre-line;
+      font-size: 1.2em;
+      text-align: left;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+    }
+
+    .lyric-line {
+      margin-bottom: 10px;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 18px;
+      border: none;
+      background: #1e90ff;
+      color: white;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #0066cc;
+    }
+  </style>
+</head>
+<body>
+
+<h1></h1>
+<button onclick="startLyrics()">▶ Play</button>
+
+<!-- Audio file (ganti 'music.mp3' sesuai file kamu) -->
+<audio id="bgm" src="about youuuuuu.mp3"></audio>
+
+<div id="lyrics"></div>
+
+<script>
+  const lyrics = [
+    { text: "it's somewhere i go", delay: 500, speed: 100 },
+    { text: "when i need to remember your face", delay: 2500, speed: 150 },
+    { text: "Do you think I have forgotten?", delay: 11000, speed: 120 },
+    { text: "Do you think I have forgotten?", delay: 16000, speed: 120 },
+    { text: "Do you think I have forgotten?", delay: 21500, speed: 120 },
+    { text: "about youuuuuuuuuuu<3", delay: 27100, speed: 80 },
+    
+  ];
+
+  const container = document.getElementById('lyrics');
+  const audio = document.getElementById('bgm');
+
+  function typeText(text, speed) {
+    let i = 0;
+    const line = document.createElement('div');
+    line.classList.add('lyric-line');
+    container.appendChild(line);
+
+    function type() {
+      if (i < text.length) {
+        line.textContent += text.charAt(i);
+        i++;
+        setTimeout(type, speed);
+      }
+    }
+
+    type();
+  }
+
+  function startLyrics() {
+    container.innerHTML = ''; // Bersihkan lirik sebelumnya
+    audio.currentTime = 0;
+    audio.play();
+
+    lyrics.forEach((line) => {
+      setTimeout(() => {
+        typeText(line.text, line.speed);
+      }, line.delay);
+    });
+  }
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+         </div>
+
+        <!-- CONTENT DONE -->
+
+        <!-- FOOTER -->
+    <div class="container-footer" />
+          <div class="typewriter"><h2>"di bumi, akan selalu ada hal yang tidak bisa dilupakan"</h2></div> 
+
+          
+          
+
+
+            
+
+    </div>
+
+         
+
+        <!-- FOOTER DONE -->
+        
+        
+       
+        <canvas id="canvas"></canvas>
+        <script src="script.js"></script>
+        
+    </body>
+    
+</html>

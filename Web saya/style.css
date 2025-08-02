@@ -1,0 +1,138 @@
+*,
+html{
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background-color: black;
+}
+
+
+.container-navbar{
+    background-color:black;
+    justify-content: center;
+}
+
+.ul-navbar{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+.li-navbar{
+    border: 1px solid white;
+    list-style-type: none;
+    padding: 10px;
+    margin: 5px;
+    justify-content: center;
+    background-color: white;
+    width: 20%;
+    height: 20px;
+    color: black;
+    text-align: center;
+    
+   
+
+
+}
+.li-navbar:hover{
+  background-color: red;
+  transition: .5s ease-in-out;
+  transition-delay: .3s;
+}
+
+.a-navbar {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+.container-content{
+    background-color: black;
+    
+
+}
+
+
+@import 'compass/css3';
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background: black;
+  object-position: center;
+}
+
+canvas {
+  display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container-footer{
+    background-color: black;
+}
+
+.typewriter h2 {
+  font-family: cursive;
+  
+  
+  overflow: hidden; /* Menyembunyikan teks di luar batas */
+  border-right: .15em solid black; /* Membuat kursor */
+  white-space: nowrap; /* Mencegah teks berpindah baris */
+  margin: 0 auto; /* Memusatkan teks */
+  letter-spacing: .200em; /* Spasi antar huruf */
+  animation:
+    typing 5s steps(80, end),
+    blink-caret .10s step-end infinite;
+}
+
+/* Animasi mengetik */
+@keyframes typing {
+  from { width: 40px }
+  to { width: 62% }
+}
+
+/* Animasi kursor */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  5% { border-color: black; }
+}
+ 
+
+
+
+
+
+
+
+
